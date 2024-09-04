@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,::after,::before{
+            box-sizing:border-box;
+            line-height:1.5;
+            margin: 0px;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        body{
+            background-color: aliceblue;
+            font-family: "Open Sans", sans-serif;
+        }
+        .card{
+            background-color:rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1)
+            0%, rgba(252,70,107,1) 100%);
+            width:600px;
+            margin: 100px auto;
+            border-radius: 10px;
+            padding: 60px;
+        }
+        .title{
+            margin-bottom:20px;
+        }
+        .name{
+            text-transform:uppercase;
+            font-weight:400;
+            margin-bottom: 20px;
+        }
+        strong{
+            text-transform:capitalize;
+            color:white;
+
+        }
+        .description{
+            margin-bottom: 20px;
+        }
+        .btm{
+            border-radius:5px;
+            color:rgba(252,70,107,1);
+            font-weight: 600;
+            border:solid white;
+            padding:7px 15px;
+        }
+    </style>
+</head>
+<body>
+   <div class="card">
+    <p class="name">Tap Academy</p>
+    <h1 class="title">Gamify Learning Simplify Employement</h1>
+    <p class="description">The Academy blends AR, Animation, and AI to teach 
+        coding,<br><strong>Full stack web development</strong>,and teach trends,forstering 
+        personalised learning and community engagement.</p>
+    <button class="btm">Learn More</button>
+   </div>
+</body>
+</html>
