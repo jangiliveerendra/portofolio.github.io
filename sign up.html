@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: rgb(2,0,36);
+            background: radial-gradient(circle, rgba(2,0,36,1) 0%,
+            rgba(121,9,60,0.8122898817730217) 
+            35%, rgba(0,212,255,1) 100%);
+        }
+       table{
+            border:2px solid black;
+        }
+        span{
+            display: none;
+        }
+        input[placeholder]:hover+span{
+            display: inline;
+            background-color: greenyellow;
+            color:black;
+            font-family:monospace;
+        }
+        input[type="radio"]:checked{
+            height:20px;
+            width: 20px;
+        }
+        input[type="radio"]:checked+p{
+           color: darkgoldenrod;
+           font-size: medium;
+           font-family:cursive;
+        }
+        p{
+            display: inline;
+        }
+        input:focus{
+            background-color: yellow;
+        }
+        img{
+            display:none;
+        }
+        input[type]:focus:valid~img#valid{
+            display: inline;
+        }
+        input[type]:focus:invalid~img#invalid{
+            display: inline;
+        }
+        input[read-only]{
+            background-color:gray;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Sign Up Form</h2>
+        <table>
+
+            <form action="">
+                <tr>
+                    <td><label>Name :</label></td>
+                    <td><input type="text"size="20" required placeholder="ex:veerendra">
+                    <span>Enter your Name</span>
+                    <img src="/images/check.png" height="15px" width="15px" id="valid"/>
+                    <img src="/images/remove.png"height="15px" width="15px"id="invalid"/></td>
+                </tr>
+                <tr>
+                    <td><label>College :</label></td>
+                    <td><input type="text" placeholder="ex:SVCE" required>
+                    <span>Enter your College</span>
+                    <img src="/images/check.png" height="15px" width="15px" id="valid"/>
+                    <img src="/images/remove.png"height="15px" width="15px"id="invalid"/></td>
+                </tr>
+                <tr>
+                    <td><label>Primary Email :</label></td>
+                    <td><input type="email"placeholder="ex:abc@gmail.com"required>
+                    <span>Enter your Primary mail</span>
+                    <img src="/images/check.png" height="15px" width="15px" id="valid"/>
+                    <img src="/images/remove.png"height="15px" width="15px"id="invalid"/></td>
+                </tr>
+                <tr>
+                    <td><label>Secondary Email :</label></td>
+                    <td><input type="email"placeholder="ex:abc@gmail.com"optional>
+                    <span>Enter your Secondary Email</span></td>
+                </tr>
+                <tr>
+                    <td><label>Mobile Number :</label></td>
+                    <td><input type="tel"placeholder="ex:9640414625"required>
+                    <span>Enter your Mobile Number</span>
+                    <img src="/images/check.png" height="15px" width="15px" id="valid"/>
+                    <img src="/images/remove.png"height="15px" width="15px"id="invalid"/></td>
+                </tr>
+                <tr>
+                    <td><label>Password :</label></td>
+                    <td><input type="password"placeholder="ex:1234"required
+                        name="pwd" size="15"minlength="8">
+                    <span>Enter your Password</span>
+                    <img src="/images/check.png" height="15px" width="15px" id="valid"/>
+                    <img src="/images/remove.png"height="15px" width="15px"id="invalid"/></td>
+                </tr>
+                <tr>
+                    <td><label>Gender :</label></td>
+                    <td><input type="radio" name="gender" value="male"><p> Male </p>
+                    <input type="radio"name="gender" value="female"><p>Female</p>
+                    <input type="radio"name="gender"value="Other"> <p>Other</p></td>
+                </tr>
+                <tr>
+                    <td><label>Age :</label></td>
+                    <td><input type="number" min="18" max="100" placeholder="ex:22"required>
+                    <span>Enter your Age</span>
+                    <img src="/images/check.png" height="15px" width="15px" id="valid"/>
+                    <img src="/images/remove.png"height="15px" width="15px"id="invalid"/></td>
+                </tr>
+                <tr>
+                    <td><label>Mode :</label></td>
+                    <td><input type="text" value="Online"placeholder="" readonly disabled>
+                    <span>The DeliveryMode is only Online</span></td>
+                </tr>
+             
+          </table>   
+        </form> <br>
+    <input type="submit">
+</body>
+</html>
